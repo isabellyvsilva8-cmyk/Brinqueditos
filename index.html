@@ -8,4 +8,298 @@
 </head>
 <body>
 
+    <!-- CABEÇALHO: logo + navegação -->
+
+    <header class="topo">
+
+<div class="logo">
+<img src="img/ChatGPT Image 8 de out. de 2026, 15_14_29.png" alt="Brinqueditos">
+</div>
+
+<nav>
+
+<ul class="menu">
+<li><a href="#inicio">Início</a></li>
+<li><a href="#categorias">Categorias</a></li>
+<li><a href="#produtos">Produtos</a></li>
+<li><a href="#sobre">Sobre nós</a></li>
+<li><a href="#contato">Contato</a></li>
+
+<li>
+<button class="botao" id="abrir-carrinho">
+Carrinho (<span id="quantidade-carrinho">0</span>)
+</button>
+</li>
+</ul>
+
+</nav>
+</header>
+
+
+<main>
+
+    <!-- DESTAQUE: mensagem de boas-vindas -->
+
+<section class="hero" id="inicio">
+    <h1>Bem-vindo à Brinqueditos!</h1>
+<p>
+    Onde a diversão começa e a imaginação não tem limites!
+</p>
+<a class="botao" href="#produtos">
+Ver brinquedos
+</a>
+</section>
+
+
+<!-- CATEGORIAS: tipos de brinquedos -->
+
+    <section class="secao" id="categorias">
+
+            <h2>Nossas Categorias</h2>
+
+            <div class="grade">
+
+                <article class="card">
+
+                    <h3>Pelúcias</h3>
+
+                    <p>Ursinhos e brinquedos fofos para todas as idades.</p>
+
+                </article>
+
+                <article class="card">
+
+                    <h3>Carrinhos</h3>
+
+                    <p>Brinquedos para quem gosta de velocidade e aventura.</p>
+
+                </article>
+
+                <article class="card">
+
+                    <h3>Jogos</h3>
+
+                    <p>Jogos e quebra-cabeças para se divertir.</p>
+
+                </article>
+
+                <article class="card">
+
+                    <h3>Educativos</h3>
+
+                    <p>Brinquedos que ajudam a aprender brincando.</p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- PRODUTOS: brinquedos em destaque -->
+
+        <section class="secao" id="produtos">
+
+            <h2>Produtos em Destaque</h2>
+
+            <div class="grade">
+
+                <article class="card produto">
+
+                    <img src="img/urso-de-pelucia-vintage-grande-e-elegante-brinquedo-de-pelucia-13-kabannas-900596_2048x.webp"
+                alt="Ursos de pelúcia">
+
+                    <h3>Ursos de Pelúcia</h3>
+
+                    <p>Dois ursinhos super fofos para brincar.</p>
+
+                    <p class="preco">R$ 99,90</p>
+
+                    <input type="number" min="1" value="1">
+                    <button class="botao adicionar-carrinho">
+                        Quero esse
+                    </button>
+
+                </article>
+
+
+                <article class="card produto">
+
+                    <img src="img/carrinho-rodao-brinquedo-infantil-cores-variadas-atacado_182815.webp"
+
+                         alt="Carrinho de brinquedo">
+
+                    <h3>Carrinho Radical</h3>
+
+                    <p>Diversão garantida para quem ama velocidade.</p>
+
+                    <p class="preco">R$ 59,90</p>
+
+                    <input type="number" min="1" value="1">
+
+                    <button class="botao adicionar-carrinho">
+
+                        Quero esse
+
+                    </button>
+
+                </article>
+
+
+                <article class="card produto">
+
+                    <img src="img/352057-800-auto.webp"
+
+                         alt="Blocos de montar">
+
+                    <h3>Blocos de Montar</h3>
+
+                    <p>Monte, crie e use a imaginação!</p>
+
+                    <p class="preco">R$ 79,90</p>
+
+                    <input type="number" min="1" value="1">
+
+                    <button class="botao adicionar-carrinho">
+
+                        Quero esse
+
+                    </button>
+
+                </article>
+
+
+                <article class="card produto">
+
+                    <img src="img/Boneca-Reborn-Bebe-Love-Born-Nanando---Cotiplas---3.webp"
+
+                         alt="Brinquedos coloridos">
+
+                    <h3>Love Born Nanando</h3>
+
+                    <p>uma bebê par cuidar e alimentar.</p>
+
+                    <p class="preco">R$ 67,90</p>
+
+                    <input type="number" min="1" value="1">
+
+                    <button class="botao adicionar-carrinho">
+
+                        Quero esse
+
+                    </button>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- OFERTA: promoção da loja -->
+
+        <section class="secao oferta">
+
+            <h2>Oferta Especial!</h2>
+
+            <p>
+
+                Na compra de 2 brinquedos ou mais, ganhe uma surpresa!
+
+            </p>
+
+            <button class="botao" id="ver-carrinho-oferta">
+
+                Aproveitar oferta
+
+            </button>
+
+        </section>
+
+
+        <!-- SOBRE NÓS: informações da loja -->
+
+        <section class="secao" id="sobre">
+
+            <h2>Sobre Nós</h2>
+
+            <p>
+
+                A brinqueditos nasceu para transformar momentos simples
+
+                em grandes aventuras.
+
+            </p>
+
+            <p>
+
+                Aqui você encontra brinquedos divertidos, educativos
+
+                e criativos para deixar cada brincadeira especial.
+
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!-- CARRINHO: produtos escolhidos -->
+
+    <aside id="carrinho">
+
+        <h2>Seu Carrinho</h2>
+
+        <button id="fechar-carrinho">X</button>
+
+        <div id="itens-carrinho">
+
+            Seu carrinho está vazio.
+
+        </div>
+
+        <p>
+
+            <strong>Total:</strong>
+
+            <span id="total-carrinho">R$ 0,00</span>
+
+        </p>
+
+        <button class="botao" id="finalizar-compra">
+
+            Finalizar compra
+
+        </button>
+
+        <button class="botao" id="limpar-carrinho">
+
+            Limpar carrinho
+
+        </button>
+
+    </aside>
+
+
+    <!-- RODAPÉ: informações de contato -->
+
+    <footer id="contato">
+
+        <p>contato@Brinqueditos.com</p>
+
+        <p>(17) 99999-9999</p>
+
+        <p>Rua da Alegria, 123 - Brasil</p>
+
+        <p>&copy; 2026 Brinqueditos - Loja de Brinquedos</p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
+
     
