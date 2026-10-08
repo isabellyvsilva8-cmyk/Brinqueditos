@@ -1,0 +1,309 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff7fb;
+    color: #333;
+}
+
+
+/* CABEÇALHO */
+
+.topo {
+    background-color: #ff69b4;
+    padding: 20px 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    border-radius: 40px;
+    width: 150px;
+}
+
+
+/* MENU */
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: #ffe1ef;
+}
+
+
+/* BOTÕES */
+
+.botao {
+    background-color: #ff69b4;
+    color: white;
+
+    border: none;
+    border-radius: 10px;
+
+    padding: 12px 20px;
+
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.botao:hover {
+    background-color: #e957a0;
+}
+
+
+/* BANNER PRINCIPAL */
+
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+
+    background-color: #ffd6e9;
+}
+
+.hero h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+
+/* SEÇÕES */
+
+.secao {
+    padding: 60px 50px;
+    text-align: center;
+}
+
+.secao h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+
+/* CARDS */
+
+.grade {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.card {
+    background-color: white;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    margin-bottom: 10px;
+}
+
+.card p {
+    line-height: 1.5;
+}
+
+
+/* IMAGENS DOS PRODUTOS */
+
+.produto img {
+    width: 100%;
+    height: 220px;
+
+    object-fit: contain;
+
+    border-radius: 10px;
+
+    margin-bottom: 15px;
+}
+
+
+/* PREÇO */
+
+.preco {
+    display: block;
+
+    font-size: 20px;
+    font-weight: bold;
+
+    color: #ff69b4;
+
+    margin: 15px 0;
+}
+
+
+/* QUANTIDADE */
+
+.produto input {
+    width: 60px;
+
+    padding: 8px;
+
+    margin-right: 10px;
+
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+
+/* OFERTA */
+
+.oferta {
+    background-color: #ffe0ed;
+
+    border-radius: 15px;
+
+    margin: 30px 50px;
+}
+
+.oferta h2 {
+    color: #ff69b4;
+}
+
+
+/* SOBRE NÓS */
+
+#sobre {
+    background-color: white;
+}
+
+#sobre p {
+    max-width: 800px;
+
+    margin: 10px auto;
+
+    line-height: 1.6;
+}
+
+
+/* CARRINHO */
+
+#carrinho {
+    position: fixed;
+
+    top: 0;
+    right: -400px;
+
+    width: 350px;
+    height: 100%;
+
+    background-color: white;
+
+    padding: 25px;
+
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2);
+
+    transition: 0.3s;
+
+    z-index: 1000;
+}
+
+#carrinho.aberto {
+    right: 0;
+}
+
+
+/* BOTÃO DE FECHAR O CARRINHO */
+
+#fechar-carrinho {
+    float: right;
+
+    background: none;
+    border: none;
+
+    font-size: 25px;
+
+    cursor: pointer;
+}
+
+
+/* ITENS DO CARRINHO */
+
+#itens-carrinho {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+
+/* RODAPÉ */
+
+footer {
+    background-color: #ff69b4;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 30px 20px;
+
+    margin-top: 40px;
+}
+
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 800px) {
+
+    .topo {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .menu ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .grade {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* CELULARES MENORES */
+
+@media (max-width: 500px) {
+
+    .secao {
+        padding: 40px 20px;
+    }
+
+    .grade {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    #carrinho {
+        width: 100%;
+    }
+}
